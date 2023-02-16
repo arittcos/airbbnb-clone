@@ -1,0 +1,493 @@
+:root {
+  --colorscheme: #ff5a60;
+  --hoverColor: #f2f2f2;
+  --textFade: #b7b6b6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+}
+
+.header {
+  border-bottom: 1px solid #ccc;
+  padding: 16px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  background-color: #ffffff;
+  z-index: 1;
+}
+
+.headerSearch {
+  position: relative;
+  left: 80px;
+  border-radius: 30px;
+}
+
+#ntClickedSearch {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0px 3px 2px var(--hoverColor);
+  transition: all 0.2s ease-in;
+}
+
+.ntClickedSearch:hover {
+  box-shadow: 0px 3px 5px #ccc;
+}
+
+.searchBtn {
+  width: 24px;
+  height: 24px;
+  border-radius: 24px;
+  color: #ffffff;
+  padding: 16px;
+  background-color: var(--colorscheme);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.anyWhere,
+.anyWeek,
+.addGuests {
+  padding: 2px 12px;
+  border-right: 1px solid #ccc;
+}
+
+.addGuests {
+  color: #ccc;
+  border: none;
+}
+
+.userRelatedOption {
+  display: flex;
+  align-items: center;
+}
+
+#menuOpen {
+  display: flex;
+}
+
+.airbnbYourHome {
+  padding: 10px 14px;
+  border-radius: 20px;
+  /* border: 1px solid #ccc; */
+  cursor: pointer;
+}
+
+.airbnbYourHome:hover {
+  background-color: var(--hoverColor);
+}
+
+.language {
+  padding: 12px 14px;
+  /* border: 1px solid #ccc; */
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 6px;
+}
+
+.language:hover {
+  background-color: var(--hoverColor);
+}
+
+#menuOpen {
+  padding: 6px 6px 4px 14px;
+  border: 1px solid #ccc;
+  border-radius: 22px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.2s ease-in;
+  position: relative;
+}
+
+#menuOpen:hover {
+  box-shadow: 0px 3px 5px #ccc;
+}
+
+.accountImg {
+  background-color: #666666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  color: #ffffff;
+  border-radius: 50%;
+}
+
+.threeLine {
+  margin-right: 14px;
+}
+
+.choiceSelection {
+  /* box-shadow: 0px 2px 4px #d7d7d7; */
+  display: flex;
+  padding: 30px 0px 0px 0px;
+  overflow-x: scroll;
+  background-color: #ffffff;
+  position: sticky;
+  top: 60px;
+  margin: 0px 40px;
+}
+
+.choiceSelection::-webkit-scrollbar {
+  display: none;
+}
+
+.choiceFarms:first-child {
+  border-bottom: 2px solid black;
+  color: black;
+}
+
+.choiceFarms {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 10px;
+  color: #ccc;
+  margin-right: 32px;
+  cursor: pointer;
+}
+
+.choiceFarms:last-child {
+  margin-right: 0;
+}
+
+.choiceFarms:hover {
+  border-bottom: 2px solid #ccc;
+  color: black;
+}
+
+.choiceFarmText {
+  font-size: 12px;
+  font-weight: 500;
+  width: max-content;
+}
+
+.choiceFarms img {
+  margin-bottom: 8px;
+}
+
+#menuOption {
+  width: 250px;
+  position: absolute;
+  right: 0px;
+  top: 54px;
+  background-color: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0px 0px 20px #ccc;
+  padding: 8px 0px;
+}
+
+hr {
+  margin: 6px 0px;
+}
+
+.signUpMenu,
+.loginMenu,
+.notifications,
+.trips,
+.wishlists,
+.account,
+.logout,
+.airbnbYourHomeMenu,
+.hostAnExperienceMenu,
+.helpMenu {
+  padding: 12px;
+  font-size: 14px;
+}
+
+.menuHover:hover {
+  background-color: var(--hoverColor);
+}
+
+.signUpMenu,
+.notifications,
+.trips,
+.wishlists {
+  font-weight: 600;
+}
+
+.dispblk {
+  display: block;
+}
+
+.dispNon {
+  display: none;
+}
+
+.property {
+  padding: 0px 40px;
+  margin-top: 26px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 40px;
+}
+
+.properties {
+  width: 280px;
+  cursor: pointer;
+  /* border: 1px solid green; */
+}
+
+.propertiesImgage {
+  width: 100%;
+  height: 250px;
+  border-radius: 14px;
+}
+
+.properties img {
+  width: 100%;
+  height: 100%;
+  border-radius: 14px;
+}
+
+.propertiesDetails {
+  padding: 12px 0px;
+}
+
+.kmAway,
+.availablity {
+  color: var(--textFade);
+  margin-top: 2px;
+  font-size: 15px;
+}
+
+#loginOrSignupWrap {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(34, 34, 34, 0.5);
+  position: absolute;
+  top: 0px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.loginOrSignupForm {
+  width: 550px;
+  height: 520px;
+  background-color: #ffffff;
+  border-radius: 14px;
+  border: 1px solid red;
+}
+
+.loginHeader {
+  padding: 18px 22px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+}
+
+.loginHeaderText {
+  font-weight: 600;
+  margin: auto;
+}
+
+.loginOrSignupFormBody {
+  padding: 22px;
+  overflow-y: auto;
+  height: 87%;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.wlToAirbnb {
+  font-size: 24px;
+  margin-top: 12px;
+}
+
+.loginUsingPhnNumber {
+  width: 100%;
+  margin-top: 22px;
+}
+
+#cntRegionSelector {
+  width: 100%;
+  padding: 18px 10px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+#phNo {
+  width: 100%;
+  padding: 18px 10px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border: 1px solid;
+}
+
+.someLoginText {
+  font-size: 12px;
+  margin-top: 6px;
+}
+
+#loginContinueBtn {
+  width: 100%;
+  background-color: #ff5a60;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 18px;
+  padding: 12px 0px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin-top: 22px;
+}
+
+.leftDivider,
+.rightDivider {
+  height: 1px;
+  background-color: #ccc;
+  width: 50%;
+}
+
+.leftDivider {
+  margin-right: 12px;
+}
+
+.rightDivider {
+  margin-left: 12px;
+}
+
+.btn {
+  width: 100%;
+  display: flex;
+  margin-top: 18px;
+  padding: 12px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+.btnText {
+  margin: auto;
+}
+
+.btn:hover {
+  background-color: var(--hoverColor);
+}
+
+#formClose {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+}
+
+#formClose:hover {
+  background-color: #ccc;
+}
+
+.clickedSearchHeaderTabs {
+  display: flex;
+}
+
+.experiences,
+.onlineExperiences {
+  margin-left: 28px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.propertyPlaceName,
+.propertiesPricePerNight {
+  color: black;
+}
+
+.clickedSearchHeaderTab {
+  padding-bottom: 12px;
+  cursor: pointer;
+  margin-right: 28px;
+  border-bottom: 2px solid #ffffff;
+}
+
+.clickedSearchHeaderTab:first-child {
+  border-bottom: 2px solid black;
+}
+
+.clickedSearchHeaderTab:last-child {
+  margin-right: 0px;
+}
+
+.clickedSearchHeaderTab:hover {
+  border-bottom: 2px solid black;
+}
+
+.addDestinationCheckinCheckoutGuestSearchBtn {
+  position: absolute;
+  border-radius: 14px;
+  display: flex;
+  padding: 12px;
+  top: 53px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px #ccc;
+}
+
+#clickedSearch {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+.destination {
+  padding: 4px 12px;
+  border-right: 1px solid #ccc;
+}
+
+.homeHeadercheckIn,
+.homeHeadercheckOut {
+  padding: 4px 12px;
+  border-right: 1px solid #ccc;
+}
+
+#homeHeadercheckInInp {
+  width: 150px;
+  border: none;
+  outline: none;
+}
+
+#homeHeadercheckOutInp {
+  width: 150px;
+  border: none;
+  outline: none;
+}
+
+.clickedSearchBtn {
+  padding: 4px 12px;
+  background-color: var(--colorscheme);
+  color: #ffffff;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-left: 12px;
+  cursor: pointer;
+}
