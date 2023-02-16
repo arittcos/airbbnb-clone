@@ -98,6 +98,18 @@ app.get(
   }
 );
 
+app.get("/listYourProperty/chooseYourPropertyType", (req, res) => {
+  res.render("listYourProperty/chooseYourPropertyType");
+});
+
+app.get("/listYourProperty/chooseTypeofPlace", (req, res) => {
+  res.render("listYourProperty/chooseTypeofPlace");
+});
+
+app.get("/listYourProperty/chooseRoomAccomodation", (req, res) => {
+  res.render("listYourProperty/chooseRoomAccomodation");
+});
+
 app.post("/homeLoginSuccess", async (req, res) => {
   res.cookie(`Phone No`, req.body.loginPhNo);
   res.cookie(`country`, req.body.loginCountry);

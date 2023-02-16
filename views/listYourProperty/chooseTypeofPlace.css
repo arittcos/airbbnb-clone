@@ -1,0 +1,41 @@
+:root {
+  --colorscheme: #ff5a60;
+  --hoverColor: #f2f2f2;
+  --textFade: #b7b6b6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.chooseYourTypeofPlace {
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+  margin-top: 28px;
+}
+
+.chooseYourTypeofPlaces {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 14px;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.chooseYourTypeofPlaces:hover {
+  outline: 2px solid black;
+}
+
+.chooseYourTypeofPlacesLeftItems {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.chooseYourTypeofPlacesLeftItems p {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--textFade);
+}
